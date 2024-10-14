@@ -1,4 +1,4 @@
-from flask import Blueprint, jsonify, request, send_from_directory
+from flask import Blueprint, jsonify, request, send_from_directory,render_template
 from app.models import db, User, Post
 from app.schemas import UserSchema, PostSchema
 
@@ -6,8 +6,7 @@ bp = Blueprint('routes', __name__)
 
 @bp.route('/')
 def home():
-    return "Bienvenue sur ma page d'accueil !"
-
+    return render_template('index.html')
 @bp.route('/users', methods=['POST'])
 def create_user():
     user_schema = UserSchema()
