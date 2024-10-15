@@ -15,9 +15,8 @@ SWAGGER_URL = '/swagger'
 
 API_URL = '/static/swagger.json' 
 def create_app():
-    app = Flask(__name__)
-    
-    #
+    app = Flask(__name__,static_folder='../static', template_folder='../app/templates')
+
     app.config.from_object(Config)
 
    

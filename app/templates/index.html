@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon API Flask</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenue sur mon projet Flask API</h1>
+        <div class="documentation">
+            <h2>Documentation de l'API</h2>
+            <p>Pour explorer toutes les fonctionnalités de notre API et commencer à l'utiliser, veuillez consulter notre documentation Swagger :</p>
+            <a href="/swagger" class="btn">Accéder à la documentation Swagger</a>
+        </div>
+
+        <section>
+            <h2>À propos de cette API</h2>
+            <p>Cette API a été conçue pour [insérez ici une brève description de l'objectif principal de votre API].</p>
+        </section>
+
+        <section>
+            <h2>Comment utiliser l'API</h2>
+            <p>Pour utiliser cette API, suivez ces étapes simples :</p>
+            <ol>
+                <li>Consultez la documentation Swagger pour voir toutes les routes disponibles et leurs paramètres.</li>
+                <li>Utilisez un client HTTP (comme Postman) ou intégrez les appels API dans votre application.</li>
+                <li>Assurez-vous d'inclure les en-têtes d'authentification nécessaires si l'API les requiert.</li>
+            </ol>
+        </section>
+
+
+        <footer>
+            <p>Projet développé par Rokhaya Dieng</p>
+        </footer>
+    </div>
+</body>
+</html>
